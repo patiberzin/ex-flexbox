@@ -26,7 +26,7 @@
 .container { /* Organização do container */
     max-width: 400px; /* Se tirar ele pega de ponta a ponta, se aumentar ele aumenta como porcentagem */
     margin: 0 auto;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
 }
 
 h1 {
@@ -45,7 +45,7 @@ body {
 
 /* Flex-direction */
 
-.row {
+.row { /* Por padrão ele é row */
     flex-direction: row;
 }
 
@@ -67,7 +67,7 @@ body {
     max-width: 400px;
     margin: 0 auto;
     display: flex;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
 }
 
 /* Flex Item - dois */
@@ -85,6 +85,125 @@ body {
 
 /* Flex-wrap */
 
+.norap {
+    flex-wrap: nowrap;
+}
 
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+/*Flex Container - tres*/
+
+.container-tres {
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    border: 3px solid #ccc;
+}
+
+/*Flex Item - tres*/
+
+.item-tres {
+    /*O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container*/
+    flex: 1;
+    margin: 5px;
+    background-color: plum;
+    text-align: center;
+    font-size: 1.5em;
+}
 
 /* Fim do Flex-wrap */
+
+/* Flex-flow */
+
+.row-nowrap {
+    flex-flow: row nowrap;
+}
+
+.column-nowrap {
+    flex-flow: column nowrap;
+}
+
+.row-wrap {
+    flex-flow: row wrap;
+}
+
+/* Flex Container - quatro */
+
+.container-quatro {
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    border: 3px solid #ccc;
+}
+
+/*Flex Item - quatro*/
+
+.item-quatro {
+/*O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container.*/
+flex: 1;
+margin: 5px;
+background-color: palevioletred;
+text-align: center;
+font-size: 1.5em;
+}
+/* Fim do Flex-flow */
+
+/* Justify Content */
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+/* Flex Container-cinco */
+
+.container-cinco {
+    max-width: 420px;
+    margin: 0 auto;
+    display: flex;
+    border: 3px solid #ccc;
+}
+
+.column {
+    min-height: 200px;
+    flex-direction: column;
+}
+
+/* Flex Item-cinco */
+
+.item-cinco {
+    margin: 5px;
+    padding: 0 10px;
+    background-color: rgb(86, 223, 241);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Indica que o conteúdo deve se expandir */
+
+.flex {
+    flex: 1;
+}
+
+/* Fim do Justify Content */
