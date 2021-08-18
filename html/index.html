@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Compreendendo Flexbox</title>
+</head>
+<body>
+
+<!-- display block e display flex -->
+
+    <h1>display: block;</h1> <!--padrão, um item embaixo do outro -->
+    <section class="container"> 
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>display: flex;</h1> <!--alinhados à esquerda, tamanho do item = tamanho do conteúdo-->
+    <section class="container flex"> 
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>display: flex;</h1> <!-- display flex não tem quebra automática -->
+    <section class="container flex"> 
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">Teste 3</div>
+        <div class="item">Teste 4</div>
+        <div class="item">Teste 5</div>
+        <div class="item">Teste 6</div>
+        <div class="item">Teste 7</div>
+    </section>
+
+    <h1>display: flex;</h1> 
+    <section class="container flex flex-wrap"> <!-- aqui há a quebra -->
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">Teste 3</div>
+        <div class="item">Teste 4</div>
+        <div class="item">Teste 5</div>
+        <div class="item">Teste 6</div>
+        <div class="item">Teste 7</div>
+    </section>
+
+    <h1>display: flex; // flex-item-1</h1> <!-- os itens crescem para ocupar o tamanho total do container -->
+    <section class="container flex"> 
+        <div class="item flex-item-1">Teste 1</div>
+        <div class="item flex-item-1">Teste 2</div>
+        <div class="item flex-item-1">Teste 3</div>
+    </section>
+
+<!-- Fim do display flex -->
+
+<!-- Flex-direction -->
+
+<h1>Flex-direction: row;</h1>
+<section class="container-dois row">
+    <div class="item-dois">1</div>
+    <div class="item-dois">2</div>
+    <div class="item-dois">3</div>
+</section>
+
+<h1>Flex-direction: row-reverse;</h1>
+<section class="container-dois row-reverse">
+    <div class="item-dois">1</div>
+    <div class="item-dois">2</div>
+    <div class="item-dois">3</div>
+</section>
+
+<h1>Flex-direction: column;</h1>
+<section class="container-dois column">
+    <div class="item-dois">1</div>
+    <div class="item-dois">2</div>
+    <div class="item-dois">3</div>
+</section>
+
+<h1>Flex-direction: column-reverse;</h1>
+<section class="container-dois column-reverse">
+    <div class="item-dois">1</div>
+    <div class="item-dois">2</div>
+    <div class="item-dois">3</div>
+</section>
+
+<!-- Fim do Flex-direction -->
+
+<!-- Flex-wrap -->
+
+
+
+<!-- Fim do Flex-wrap -->
+
+</body>
+</html>
