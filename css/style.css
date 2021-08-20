@@ -440,3 +440,55 @@ img {
 }
 
 /* Fim do Flex-basis */
+
+/* Flex-shrink */
+
+.shrink-1 {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.shrink-3 {
+	flex-grow: 1;
+	flex-shrink: 3;
+}
+
+.shrink-1-basis {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 150px;
+}
+
+.shrink-0-basis {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 150px;
+}
+
+.shrink-3-basis {
+	flex-grow: 1;
+	flex-shrink: 3;
+	flex-basis: 150px;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+
+.item-nove {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* Flex Container */
+.container-nove {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+/* Fim do Flex-shrink */
