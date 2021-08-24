@@ -9,56 +9,132 @@
 </head>
 <body>
 
+    <h2>Compreendendo Flexbox através do material da Origamid</h2>
+    <h3>Vide: https://origamid.com/projetos/flexbox-guia-completo/</h3>
+
 <!-- display block e display flex -->
+<section class="materia">
+    <div>
+        <p class="titulo">Display: Flex</p>
+            <ul>
+                <li>Possuí alinhamento à esquerda como se fosse float left;</li>
+                <li>O tamanho do item é o mesmo tamanho do conteúdo;</li>
+                <li>Display flex não tem quebra automática;</li>
+                <li>Coloca os elementos em linha, um ao lado do outro.</li>
+            </ul>
+    </div>
+
+    <div>
+        <p class="titulo">Display: Block</p>
+            <ul>
+                <li>Padrão: Um item embaixo do outro.</li>
+            </ul>
+    </div>
+
+    <div>
+        <p class="titulo">Flex-wrap: wrap;</p>
+            <ul>
+                <li>Insere quebra.</li>
+            </ul>
+    </div>
+
+    <div>
+        <p class="titulo">Flex-item-1</p>
+            <ul>
+                <li>Os itens crescem para ocupar todo o espaço do container.</li>
+            </ul>
+    </div>
+</section>
 
     <h1>display: block;</h1> <!--padrão, um item embaixo do outro -->
-    <section class="container"> 
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
+    <section class="container-um"> 
+        <div class="item-um">1</div>
+        <div class="item-um">2</div>
+        <div class="item-um">3</div>
+        <div class="item-um">4</div>
     </section>
 
     <h1>display: flex;</h1> <!--alinhados à esquerda, tamanho do item = tamanho do conteúdo-->
-    <section class="container flex"> 
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
+    <section class="container-um flex-um"> 
+        <div class="item-um">1</div>
+        <div class="item-um">2</div>
+        <div class="item-um">3</div>
+        <div class="item-um">4</div>
     </section>
 
     <h1>display: flex;</h1> <!-- display flex não tem quebra automática -->
-    <section class="container flex"> 
-        <div class="item">Teste 1</div>
-        <div class="item">Teste 2</div>
-        <div class="item">Teste 3</div>
-        <div class="item">Teste 4</div>
-        <div class="item">Teste 5</div>
-        <div class="item">Teste 6</div>
-        <div class="item">Teste 7</div>
+    <section class="container-um flex-um"> 
+        <div class="item-um">Teste 1</div>
+        <div class="item-um">Teste 2</div>
+        <div class="item-um">Teste 3</div>
+        <div class="item-um">Teste 4</div>
+        <div class="item-um">Teste 5</div>
+        <div class="item-um">Teste 6</div>
+        <div class="item-um">Teste 7</div>
     </section>
 
     <h1>display: flex;</h1> 
-    <section class="container flex flex-wrap"> <!-- aqui há a quebra -->
-        <div class="item">Teste 1</div>
-        <div class="item">Teste 2</div>
-        <div class="item">Teste 3</div>
-        <div class="item">Teste 4</div>
-        <div class="item">Teste 5</div>
-        <div class="item">Teste 6</div>
-        <div class="item">Teste 7</div>
+    <section class="container-um flex-um flex-wrap-um"> <!-- aqui há a quebra -->
+        <div class="item-um">Teste 1</div>
+        <div class="item-um">Teste 2</div>
+        <div class="item-um">Teste 3</div>
+        <div class="item-um">Teste 4</div>
+        <div class="item-um">Teste 5</div>
+        <div class="item-um">Teste 6</div>
+        <div class="item-um">Teste 7</div>
     </section>
 
     <h1>display: flex; // flex-item-1</h1> <!-- os itens crescem para ocupar o tamanho total do container -->
-    <section class="container flex"> 
-        <div class="item flex-item-1">Teste 1</div>
-        <div class="item flex-item-1">Teste 2</div>
-        <div class="item flex-item-1">Teste 3</div>
+    <section class="container-um flex-um"> 
+        <div class="item-um flex-item-1">Teste 1</div>
+        <div class="item-um flex-item-1">Teste 2</div>
+        <div class="item-um flex-item-1">Teste 3</div>
     </section>
 
 <!-- Fim do display flex -->
 
 <!-- Flex-direction -->
+
+<section class="materia">
+    <div>
+        <p class="titulo-dois">Flex-Direction</p>
+            <ul>
+                <li>Define a direção dos flex-itens;</li>
+                <li>Padrão: Row (linha);</li>
+                <li>Mudamos de row para column quando estamos definindo estilos de media queries para mobile.</li>
+            </ul>
+    </div>
+
+    <div>
+        <p class="titulo-dois">Tipos de Flex-Direction:</p>
+            <h4>Flex-direction: row;</h4>
+                <ul>
+                    <li>Os itens ficam em linha</li>
+                </ul>
+    </div>
+
+    <div>
+        <h4>Flex-direction: row-reverse;</h4>
+            <ul>
+                <li>Os itens ficam em linha reversa: 3,2,1</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4>Flex-direction: column;</h4>
+            <ul>
+                <li>Os itens ficam em única coluna, um embaixo do outro.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4>Flex-direction: column-reverse;</h4>
+            <ul>
+                <li>Os itens ficam em única coluna, um embaixo do outro, mas em ordem reversa.</li>
+            </ul>
+    </div>
+</section>
+
 
 <h1>Flex-direction: row;</h1>
 <section class="container-dois row">
@@ -88,9 +164,42 @@
     <div class="item-dois">3</div>
 </section>
 
+
 <!-- Fim do Flex-direction -->
 
 <!-- Flex-wrap -->
+
+<section class="materia">
+    <div>
+        <p class="titulo-tres">Flex-Wrap</p>
+            <ul>
+                <li>Define se os itens quebrarão ou não a linha;</li>
+                <li>Usa-se flex-wrap: wrap;</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="purple">Flex-wrap: nowrap;</h4>
+            <ul>
+                <li>Padrão. Não permite quebra de linha.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="purple">Flex-wrap: wrap;</h4>
+            <ul>
+                <li>Quebra linha assim que os itens não puderem mais ser compactados.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="purple">Flex-wrap: wrap-reverse;</h4>
+            <ul>
+                <li>Quebra a linha na direção contrária, ou seja, para a linha acima.</li>
+            </ul>
+    </div>
+
+</section>
 
 <h1>flex-wrap: nowrap;</h1>
 <section class="container-tres nowrap">
@@ -118,6 +227,38 @@
 
 <!-- Flex-flow -->
 
+<section class="materia">
+    <div>
+        <p class="titulo-quatro">Flex-Flow</p>
+            <ul>
+               <li>Atalho para flex-direction e flex-wrap;</li>
+               <li>Não muito usado.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="palevioletred">Flex-flow: row nowrap;</h4>
+            <ul>
+                <li>Conteúdo em linha sem quebra de linha.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="palevioletred">Flex-flow: row wrap;</h4>
+            <ul>
+                <li>Conteúdo em linha com quebra de linha.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="palevioletred">Flex-flow: column nowrap;</h4>
+            <ul>
+                <li>Conteúdo em coluna, sem quebra de linha.</li>
+            </ul>
+    </div>
+
+</section>
+
 <h1>flex-flow: row nowrap;</h1>
 <section class="container-quatro row-nowrap">
     <div class="item-quatro">TesteDoItem1</div>
@@ -142,6 +283,54 @@
 <!-- Fim do Flex-flow -->
 
 <!-- Justify Content -->
+
+<section class="materia">
+    <div>
+        <p class="titulo-cinco">Justify-content</p>
+            <ul>
+               <li>Alinha os itens flex no container ao longo do eixo principal.</li>
+               <li>O Justify-content não funciona em items com flex-grow definido.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="blue">Justify-content: flex-start;</h4>
+            <ul>
+                <li>Padrão. Os itens são alinhados a partir do início do eixo principal (container).</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="blue">Justify-content: flex-end;</h4>
+            <ul>
+                <li>Os itens são alinhados a partir do fim do eixo principal (container).</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="blue">Justify-content: center;</h4>
+            <ul>
+                <li>Os itens são alinhados ao centro do eixo principal.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="blue">Justify-content: space-between;</h4>
+            <ul>
+                <li>Cria um espaço igual entre os elementos;</li>
+                <li>Mantem o primeiro grudado ao início e o último ao final.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="blue">Justify-content: space-around;</h4>
+            <ul>
+                <li>Cria um espaço entre os elementos;</li>
+                <li>O espaço do meio é duas vezes maior que o inicial e o final.</li>
+            </ul>
+    </div>
+
+</section>
 
 <h1>justify-content: flex-start;</h1>
 <section class="container-cinco flex-start">
@@ -241,7 +430,201 @@
 
 <!-- Fim do Justify Content -->
 
+<!-- Align-Items -->
+
+<section class="materia">
+    <div>
+        <p class="titulo-seis">Align-Items</p>
+            <ul>
+               <li>Alinha o flex-item de acordo com o eixo do container;</li>
+               <li>O alinhamento é diferente quando os itens estão em colunas ou linhas;</li>
+               <li>Permite o alinhamento central no eixo vertical.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="gray">Align-items: stretch;</h4>
+            <ul>
+                <li>Padrão. Faz com que os flex itens cresçam igualmente e acompanhem o height.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="gray">Align-items: flex-start;</h4>
+            <ul>
+                <li>Alinha os itens ao início.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="gray">Align-items: flex-end;</h4>
+            <ul>
+                <li>Alinha os itens ao final.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="gray">Align-items: center;</h4>
+            <ul>
+                <li>Alinha os itens ao centro.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="gray">Align-items: baseline;</h4>
+            <ul>
+                <li>Alinha os itens de acordo com a base da primeira linha de texto de cada um.</li>
+            </ul>
+    </div>
+
+</section>
+
+<h1>align-items: stretch;</h1>
+<section class="container-treze stretch-treze">
+    <div class="item-treze">1</div>
+    <div class="item-treze">Teste 2 do Item</div>
+    <div class="item-treze">Teste 3 do Item Agora Mesmo</div>
+    <div class="item-treze">Teste 4</div>
+</section>
+
+<h1>align-items: flex-start;</h1>
+<section class="container-treze flex-start-treze">
+    <div class="item-treze">1</div>
+    <div class="item-treze">Teste 2 do Item</div>
+    <div class="item-treze">Teste 3 do Item Agora Mesmo</div>
+    <div class="item-treze">Teste 4</div>
+</section>
+
+<h1>align-items: flex-end;</h1>
+<section class="container-treze flex-end-treze">
+    <div class="item-treze">1</div>
+    <div class="item-treze">Teste 2 do Item</div>
+    <div class="item-treze">Teste 3 do Item Agora Mesmo</div>
+    <div class="item-treze">Teste 4</div>
+</section>
+
+<h1>align-items: center</h1>
+<section class="container-treze center-treze">
+    <div class="item-treze">1</div>
+    <div class="item-treze">Teste 2 do Item</div>
+    <div class="item-treze">Teste 3 do Item Agora Mesmo</div>
+    <div class="item-treze">Teste 4</div>
+</section>
+
+<h1>align-items: baseline</h1>
+<section class="container-treze baseline-treze">
+    <div class="item-treze teste">1</div>
+    <div class="item-treze">Teste 2 do Item</div>
+    <div class="item-treze">Teste 3 do Item Agora Mesmo</div>
+    <div class="item-treze">Teste 4</div>
+</section>
+
+<h1>align-items: flex-stretch; // column</h1>
+<section class="container-treze stretch-treze column-treze">
+    <div class="item-treze">1</div>
+    <div class="item-treze">Teste 2 do Item</div>
+    <div class="item-treze">Teste 3 do Item Agora Mesmo</div>
+    <div class="item-treze">Teste 4</div>
+</section>
+
+<h1>align-items: flex-start; // column</h1>
+<section class="container-treze flex-start-treze column-treze">
+    <div class="item-treze">1</div>
+    <div class="item-treze">Teste 2 do Item</div>
+    <div class="item-treze">Teste 3 do Item Agora Mesmo</div>
+    <div class="item-treze">Teste 4</div>
+</section>
+
+<h1>align-items: flex-end; // column</h1>
+<section class="container-treze flex-end-treze column-treze">
+    <div class="item-treze">1</div>
+    <div class="item-treze">Teste 2 do Item</div>
+    <div class="item-treze">Teste 3 do Item Agora Mesmo</div>
+    <div class="item-treze">Teste 4</div>
+</section>
+
+<h1>align-items: center; // column</h1>
+<section class="container-treze center-treze column-treze">
+    <div class="item-treze">1</div>
+    <div class="item-treze">Teste 2 do Item</div>
+    <div class="item-treze">Teste 3 do Item Agora Mesmo</div>
+    <div class="item-treze">Teste 4</div>
+</section>
+
+<h1>align-items: baseline; // column</h1>
+<section class="container-treze baseline-treze column-treze">
+    <div class="item-treze teste">1</div>
+    <div class="item-treze">Teste 2 do Item</div>
+    <div class="item-treze">Teste 3 do Item Agora Mesmo</div>
+    <div class="item-treze">Teste 4</div>
+</section>
+
+<h1>align-items: center; // justify-content: center;</h1>
+<section class="container-treze alinhamento-central">
+    <div class="item-treze">Este item está verticalmente alinhado ao centro</div>
+</section>
+
+<!-- Fim do Align-Items -->
+
 <!-- Align Content -->
+
+<section class="materia">
+    <div>
+        <p class="titulo-sete">Align-content</p>
+            <ul>
+               <li>Alinha as linhas do container de acordo com o eixo vertical;</li>
+               <li>Só funciona se existir mais de uma linha de flex itens;</li>
+               <li>Para isso, o flex-wrap precisa ser wrap;</li>
+               <li>Seu efeito só poderá ser visto se o container for maior que a soma da linha dos itens;</li>
+               <li>Ou seja, deve-se definir o height para o container.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="yellow">Align-content: stretch;</h4>
+            <ul>
+                <li>Padrão. Faz com que os flex-itens cresçam igualmente na vertical.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="yellow">Align-content: flex-start;</h4>
+            <ul>
+                <li>Alinha todas as linhas de itens ao início.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="yellow">Align-content: flex-end;</h4>
+            <ul>
+                <li>Alinha todas as linhas de itens ao final.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="yellow">Align-content: center;</h4>
+            <ul>
+                <li>Alinha todas as linhas de itens ao centro.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="yellow">Align-content: space-between;</h4>
+            <ul>
+                <li>Cria um espaçamento igual entre as linhas;</li>
+                <li>Mantem a primeira grudada no top e a última no bottom.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="yellow">Align-content: space-around;</h4>
+            <ul>
+                <li>Cria um espaçamento entre as linhas;</li>
+                <li>Os espaçamentos do meio são duas vezes maiores que o top e bottom.</li>
+            </ul>
+    </div>
+
+</section>
 
 <h1>align-content: stretch;</h1>
 <section class="container-seis stretch">
@@ -319,6 +702,37 @@
 
 <!-- Flex Item - Flex-grow -->
 
+<section class="materia">
+    <div>
+        <p class="titulo-oito">Flex-Grow</p>
+            <ul>
+               <li>Define a proporção de um flex-item de crescer;</li>
+               <li>Padrão: 0 - indica que não deve crescer;</li>
+               <li>Aceitos apenas valores numéricos positivos.</li>
+               <li>Ao definir 1 para os flex-itens, eles <u>tentarão</u> ter a mesma largura e vão ocupar 100% do container</li>
+               <li>Caso haja um elemento muito largo, ele respeitará o mesmo;</li>
+               <li>Ex: Tenho em uma linha, 4 itens, onde 3 são flex-grow: 1 e o último é flex-grow: 2. O que acontece?</li>
+               <li>R.: O flex-grow 2 tentará ocupar duas vezes mais espaço extra do que os outros elementos.</li>
+               <li>Obs: O Justify-content não funciona em items com flex-grow definido.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="beige">Flex-grow: número;</h4>
+            <ul>
+               <li>Basta definir um número.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="beige">Flex-grow: 0;</h4>
+            <ul>
+                <li>Obedece o width do elemento ou o flex-basis.</li>
+            </ul>
+    </div>
+
+</section>
+
 <h1>Flex-grow: 0;</h1>
 <section class="container-sete">
     <div class="item-sete grow0">1</div>
@@ -357,6 +771,41 @@
 <!-- Fim do Flex-grow -->
 
 <!-- Flex-basis -->
+
+<section class="materia">
+    <div>
+        <p class="titulo-nove">Flex-Basis</p>
+            <ul>
+               <li>Define o tamanho inicial do item, antes da distribuição do espaço restante;</li>
+               <li>Dependendo da direção do eixo principal (horizontal e vertical), essa propriedade define largura ou altura mínima do elemento antes que ele seja redimensionado por outras propriedades.</li>
+               <li>Ao definirmos flex-grow: 1 e temos auto no basis, o valor restante para ocupar o container é distribuído ao redor do conteúdo do flex-item;</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="bluesky">Flex-basis: auto;</h4>
+            <ul>
+               <li>Padrão. Faz com que a largura da base seja igual a do item;</li>
+               <li>Se o item não tiver tamanho especificado, o tamanho será de acordo com o conteúdo.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="bluesky">Flex-basis: unidade;</h4>
+            <ul>
+                <li>Pode ser em %, px, em, e etc.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="bluesky">Flex-basis: 0;</h4>
+            <ul>
+               <li>Se o grow for maior que 1, ele tentará manter todos os elementos com a mesma largura, independente do conteúdo (por isso 0 é o valor mais comum do flex-basis);</li>
+               <li>Caso contrário, o item terá a largura do seu conteúdo.</li>
+            </ul>
+    </div>
+
+</section>
 
 <h1>flex-basis: auto;</h1>
 <section class="container-oito">
@@ -423,6 +872,38 @@
 <!-- Fim do Flex-basis -->
 
 <!-- Flex-shrink -->
+
+<section class="materia">
+    <div>
+        <p class="titulo-dez">Flex-Shrink</p>
+            <ul>
+               <li>Define a capacidade de redução de tamanho do item.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="orangered">Flex-shink: 1;</h4>
+            <ul>
+               <li>Padrão. Permite que os itens tenham seus tamanhos (definidos a partir de width ou flex-basis) reduzidos para caber no container.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="orangered">Flex-shink: 0;</h4>
+            <ul>
+                <li>Não permite a diminuição dos itens;</li>
+                <li>Um item com flex-basis: 300px nunca diminuirá menos do que 300px, mesmo que o conteúdo não ocupe todo esse espaço.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="orangered">Flex-shink: número;</h4>
+            <ul>
+               <li>Um item com shrink: 3 diminuirá três vezes mais que um item com 1.</li>
+            </ul>
+    </div>
+
+</section>
 
 <h1>flex-shrink: 1;</h1>
 <section class="container-nove">
@@ -505,5 +986,267 @@
 </section>
 
 <!-- Fim do Flex-shrink -->
+
+<!-- Flex -->
+
+<section class="materia">
+    <div>
+        <p class="titulo-onze">Flex</p>
+            <ul>
+               <li>Atalho para as propriedades <b>flex-grow, flex-shrink e flex-basis;</b></li>
+               <li>É recomendado usar a propriedade flex, ao invés dos valores separados;</li>
+               <li>No exemplo é possível ver as mesmas configurações do exemplo do flex-basis porém agora utilizando apenas a propriedade flex.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="pink">Flex: 1;</h4>
+            <ul>
+               <li>Define flex-grow: 1; flex-shrink: 1; e flex-basis: 0; </li>
+               <li>Em alguns browsers define como 0%, pois estes ignoram valores sem unidades, porém a função de 0 e 0% é a mesma.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="pink">Flex: 0 1 auto;</h4>
+            <ul>
+                <li>Esse é o padrão, se você não definir nenhum valor de flex ou para as outras propriedades separadas, o normal será flex-grow: 0, flex-shrink: 1 e flex-basis: auto.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="pink">Flex: 2;</h4>
+            <ul>
+               <li>Define exatamente da mesma forma que o flex: 1; porém neste caso o flex-grow será de 2, o flex-shrink continuará 1 e o flex-basis 0.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="pink">Flex: 3 2 300px;</h4>
+            <ul>
+               <li>flex-grow: 3, flex-shrink: 2 e flex-basis: 300px;</li>
+            </ul>
+    </div>
+
+</section>
+
+<h1>flex: n 1 auto;</h1>
+<section class="container-dez">
+    <div class="item-dez basis-auto-segundo">Palavra 1</div> <!-- Coloquei "segundo" para não sobrescrever o primeiro mais acima -->
+    <div class="item-dez basis-auto-segundo">2</div>
+    <div class="item-dez basis-auto-grow-2-segundo">3</div>
+    <div class="item-dez basis-auto-width-segundo">4</div>
+    <div class="item-dez basis-auto-grow-0-segundo">5</div>
+</section>
+
+<h1>flex: 1;</h1>
+<section class="container-dez">
+    <div class="item-dez basis-0-segundo">Test de Cont</div>
+    <div class="item-dez basis-0-segundo">2</div>
+    <div class="item-dez basis-0-grow-2-segundo">Palavra</div>
+    <div class="item-dez basis-0-width-segundo">4</div>
+    <div class="item-dez basis-0-grow-0-segundo">5</div>
+</section>
+
+<h1>flex: flex: 0 1 n;</h1>
+<section class="container-dez basis-numero-container-segundo">
+    <div class="item-dez basis-110-segundo">1</div>
+    <div class="item-dez basis-110-segundo">12</div>
+    <div class="item-dez basis-110-segundo">12345678910</div>
+    <div class="item-dez basis-300-segundo">1234</div>
+    <div class="item-dez basis-110-porcento-segundo">1</div>
+    <div class="item-dez basis-110-porcento-segundo">12</div>
+    <div class="item-dez basis-110-porcento-segundo">123</div>
+    <div class="item-dez basis-110-porcento-segundo">1234</div>
+</section>
+
+<h1>flex: 0 1 n; // Diferente Conteúdo</h1>
+<section class="container-dez basis-numero-container-segundo">
+    <div class="item-dez basis-110-segundo">Conteúdo Grande</div>
+    <div class="item-dez basis-110-segundo">PalavraMaior</div>
+    <div class="item-dez basis-110-segundo">Oi</div>
+</section>
+
+<h1>flex: 1 1 n; //</h1>
+<section class="container-dez basis-numero-container-segundo">
+    <div class="item-dez basis-110-grow-1-segundo">1</div>
+    <div class="item-dez basis-110-grow-1-segundo">12</div>
+    <div class="item-dez basis-110-grow-1-segundo">1234</div>
+    <div class="item-dez basis-110-grow-1-segundo">12345</div>
+    <div class="item-dez basis-600-grow-1-segundo">5</div>
+</section>
+
+<!-- Fim do Flex -->
+
+<!-- Order -->
+
+<section class="materia">
+    <div>
+        <p class="titulo-doze">Order</p>
+            <ul>
+               <li>Modifica a ordem dos flex itens;</li>
+               <li>Sempre do menor para o maior;</li>
+               <li>Ex -> Order: 1, aparece na frente de order: 5</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="lightgreen">Order: número;</h4>
+            <ul>
+               <li>Número para modificar a ordem padrão;</li>
+               <li>Pode ser negativo.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="lightgreen">Order: 0;</h4>
+            <ul>
+                <li>0 é o valor padrão e isso significa que a ordem dos itens será a ordem apresentada no HTML.</li>
+                <li>Se você quiser colocar um item do meio da lista no início da mesma, sem modificar os demais, o ideal é utilizar um valor negativo para este item, já que todos os outros são 0.</li>
+            </ul>
+    </div>
+
+</section>
+
+<h1>order: misturado;</h1>
+<section class="container-onze">
+    <div class="item-onze order2">1</div>
+    <div class="item-onze order4">2</div>
+    <div class="item-onze order1">3</div>
+    <div class="item-onze order3">4</div>
+</section>
+
+<h1>order: negativo; / flex-grow</h1>
+<section class="container-onze">
+    <div class="item-onze order2 flex-grow">1</div>
+    <div class="item-onze order-1 flex-grow">2</div>
+    <div class="item-onze order1 flex-grow">3</div>
+    <div class="item-onze order3 flex-grow">4</div>
+</section>
+
+<h1>order: valores iguais; / grow / column</h1>
+<section class="container-onze column">
+    <div class="item-onze order2 flex-grow">1</div>
+    <div class="item-onze order2 flex-grow">2</div>
+    <div class="item-onze order1 flex-grow">3</div>
+    <div class="item-onze order1 flex-grow">4</div>
+</section>
+
+<h1>order: valores iguais; / grow / column</h1>
+<section class="container-onze column">
+    <div class="item-onze flex-grow">1</div>
+    <div class="item-onze order2 flex-grow">2</div>
+    <div class="item-onze flex-grow">3</div>
+    <div class="item-onze order-1 flex-grow">4</div>
+</section>
+
+<!-- Fim do Order -->
+
+<!-- Align-self -->
+
+<section class="materia">
+    <div>
+        <p class="titulo-treze">Align-Self</p>
+            <ul>
+               <li>Serve para definirmos o alinhamento específico de um único flex item dentro do container;</li>
+               <li>Esta propriedade permite sobrescrever no item o comportamento que foi definido pela propriedade align-items.</li>
+               <li>O alinhamento acontece tanto em linha quanto em colunas.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="brown">Align-self: auto;</h4>
+            <ul>
+               <li>Padrão. Respeita o comportamento definido no container por meio do align-items</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="brown">Align-self: flex-start;</h4>
+            <ul>
+                <li>Alinha o item ao início.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="brown">Align-self: flex-end;</h4>
+            <ul>
+               <li>Alinha o item ao final.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="brown">Align-self: center;</h4>
+            <ul>
+               <li>Alinha o item ao centro.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="brown">Align-self: baseline;</h4>
+            <ul>
+               <li>Alinha o item a linha de base.</li>
+            </ul>
+    </div>
+
+    <div>
+        <h4 class="brown">Align-self: stretch;</h4>
+            <ul>
+                <li>Estica o item.</li>
+            </ul>
+    </div>
+
+</section>
+
+<h1>align-self: multiplos;</h1>
+<section class="container-doze">
+    <div class="item-doze flex-end-terceiro">1</div>
+    <div class="item-doze flex-start-terceiro">Teste 2 do Item</div>
+    <div class="item-doze">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+    <div class="item-doze center-terceiro">Teste 4</div>
+</section>
+
+<h1>align-self: multiplos;</h1>
+<section class="container-doze">
+    <div class="item-doze baseline-terceiro">1</div>
+    <div class="item-doze baseline-terceiro">Teste 2 do Item</div>
+    <div class="item-doze">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+    <div class="item-doze center-terceiro">Teste 4</div>
+</section>
+
+<h1>align-self: stretch; // align-items: flex-end;</h1>
+<section class="container-doze align-items-terceiro">
+    <div class="item-doze">1</div>
+    <div class="item-doze stretch-terceiro">Teste 2 do Item</div>
+    <div class="item-doze">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+    <div class="item-doze">Teste 4</div>
+</section>
+
+<h1>align-self: multiplos;</h1>
+<section class="container-doze column-terceiro">
+    <div class="item-doze flex-end-terceiro">1</div>
+    <div class="item-doze flex-star-terceirot">Teste 2 do Item</div>
+    <div class="item-doze">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+    <div class="item-doze center-terceiro">Teste 4</div>
+</section>
+
+<h1>align-self: multiplos;</h1>
+<section class="container-doze column-terceiro">
+    <div class="item-doze baseline-terceiro">1</div>
+    <div class="item-doze baseline-terceiro">Teste 2 do Item</div>
+    <div class="item-doze">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+    <div class="item-doze center-terceiro">Teste 4</div>
+</section>
+
+<h1>align-self: stretch; // align-items: flex-end;</h1>
+<section class="container-doze column align-items-terceiro">
+    <div class="item-doze">1</div>
+    <div class="item-doze stretch-terceiro">Teste 2 do Item</div>
+    <div class="item-doze">Teste 3 do Item Agora Mesmo Esse Mesmo.</div>
+    <div class="item-doze">Teste 4</div>
+</section>
+
+<!-- Fim do Align-self -->
+
 </body>
 </html>

@@ -1,33 +1,4 @@
-/* Display Flex */
-
-/* Flex */
-
-.flex {
-    display: flex;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.flex-item-1 {
-    flex: 1;
-}
-
-/* Flex Item */
-
-.item { /* Organização dos itens dentro do container */
-    margin: 5px;
-    background-color: salmon;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.container { /* Organização do container */
-    max-width: 400px; /* Se tirar ele pega de ponta a ponta, se aumentar ele aumenta como porcentagem */
-    margin: 0 auto;
-    border: 3px solid #ccc;
-}
+/* Estilos gerais */
 
 h1 {
     text-align: center;
@@ -40,6 +11,231 @@ body {
     font-family: monospace;
     color: #333;
 }
+
+.materia {
+    flex-direction: column;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(246, 65, 20, 0.952);
+    
+}
+
+.titulo-dois {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(11, 90, 11);
+}
+
+.titulo-tres {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: purple;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(8, 165, 42);
+}
+
+.purple {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: purple;
+}
+
+.titulo-quatro {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: palevioletred;
+}
+
+.palevioletred {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(192, 93, 126);
+}
+
+.titulo-cinco {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(7, 7, 149);
+}
+
+.blue {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(22, 65, 182);
+}
+
+.titulo-seis {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(55, 55, 58);
+}
+
+.gray {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(135, 136, 138);
+}
+
+.titulo-sete {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(233, 211, 19);
+}
+
+.yellow {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(221, 170, 2);
+}
+
+.titulo-oito {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(194, 168, 126);
+}
+
+.beige {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(204, 183, 140);
+}
+
+.titulo-nove {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(11, 142, 218);
+}
+
+.bluesky {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(22, 127, 189);
+}
+
+.titulo-dez {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orangered;
+}
+
+.orangered {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(235, 105, 58);
+}
+
+.titulo-onze {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(195, 20, 93);
+}
+
+.pink {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(199, 47, 128);
+}
+
+.titulo-doze {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(5, 170, 101);
+}
+
+.lightgreen {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(68, 139, 68);
+}
+
+.titulo-treze {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(102, 61, 7);
+}
+
+.brown {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(218, 143, 6);
+}
+
+/* Display Flex */
+
+/* Flex */
+
+.flex-um {
+    display: flex;
+}
+
+.flex-wrap-um {
+    flex-wrap: wrap;
+}
+
+.flex-item-1 {
+    flex: 1;
+}
+
+/* Flex Item */
+
+.item-um { /* Organização dos itens dentro do container */
+    margin: 5px;
+    background-color: salmon;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container-um { /* Organização do container */
+    max-width: 400px; /* Se tirar ele pega de ponta a ponta, se aumentar ele aumenta como porcentagem */
+    margin: 0 auto;
+    border: 3px solid #ccc;
+}
+
 
 /* Fim do Display Flex */
 
@@ -207,6 +403,66 @@ font-size: 1.5em;
 }
 
 /* Fim do Justify Content */
+
+/* Align Items */
+
+.stretch-treze {
+    align-items: stretch;
+}
+
+.flex-start-treze {
+    align-items: flex-start;
+}
+
+.flex-end-treze {
+    align-items: flex-end;
+}
+
+.center-treze {
+    align-items: center;
+}
+
+.baseline-treze {
+    align-items: baseline;
+}
+
+/* Flex Container-treze */
+.container-treze {
+    max-width: 420px;
+    margin: 0 auto;
+    display: flex;
+    border: 3px solid #ccc;
+}
+
+.column-treze {
+    flex-direction: column;
+}
+
+/* Flex Item-treze */
+.item-treze {
+    flex: 1;
+    margin: 5px;
+    background-color: rgb(179, 179, 179);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.item-treze:first-child {
+    padding-top: 20px;
+}
+
+.alinhamento-central {
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.alinhamento-central .item-treze {
+    flex: 0;
+    padding: 10px;
+}
+
+/* Fim do Align Items */
 
 /* Align Content */
 
@@ -492,3 +748,202 @@ img {
 }
 
 /* Fim do Flex-shrink */
+
+/* FLEX BASIS AUTO */
+
+.basis-auto-segundo {
+    flex: 1 1 auto;
+}
+
+.basis-auto-grow-2-segundo {
+    flex: 2 1 auto;
+}
+
+.basis-auto-width-segundo {
+    flex: 1 1 auto;
+    width: 60px;
+}
+
+.basis-auto-grow-0-segundo {
+    flex: 0 1 auto;
+}
+/* FLEX BASIS AUTO FIM */
+
+/* FLEX BASIS 0 */
+
+.basis-0-segundo {
+    flex: 1;
+}
+
+/* O tamanho total é de duas vezes dos itens com flex: 1; */
+.basis-0-grow-2-segundo {
+    flex: 2;
+}
+
+.basis-0-width-segundo {
+    flex: 1;
+    width: 120px;
+    min-width: 80px;
+}
+
+.basis-0-grow-0-segundo {
+    flex:  0 1 0;
+}
+
+/* FLEX BASIS 0 FIM */
+
+.basis-numero-container-segundo {
+    flex-wrap: wrap;
+}
+
+.basis-110-segundo {
+    flex: 0 1 110px;
+}
+
+.basis-300-segundo {
+    flex: 0 1 300px;
+}
+
+.basis-110-porcento-segundo {
+    flex: 0 1 calc(25% - 10px);
+}
+
+.basis-110-grow-1-segundo {
+    flex: 1 1 110px;
+}
+
+.basis-600-grow-1-segundo {
+    flex: 1 1 600px;
+}
+
+/* ESTILOS GERAIS */
+
+.item-dez {
+    margin: 5px;
+    background-color: hotpink;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+}
+
+/* Flex Container-dez */
+.container-dez {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    border: 3px solid #ccc;
+}
+
+/* Flex Item-dez */
+img {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+/* Fim do Flex */
+
+/* Order */
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
+}
+
+.order4 {
+    order: 4;
+}
+
+.order-1 {
+    order: -1;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.item-onze {
+    margin: 5px;
+    padding: 0 5px;
+    background-color: darkseagreen;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Flex Container-onze */
+.container-onze {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    border: 3px solid #ccc;
+}
+
+/* Fim do Order */
+
+/* Align-self */
+
+/* Obs: Coloquei terceiro para diferenciar das outras classes */
+
+.flex-start-terceiro {
+    align-self: flex-start;
+}
+
+.flex-end-terceiro {
+    align-self: flex-end;
+}
+
+.center-terceiro {
+    align-self: center;
+}
+
+.baseline-terceiro {
+    align-self: baseline;
+}
+
+.stretch-terceiro {
+    align-self: stretch;
+}
+
+.align-items-terceiro {
+    align-items: flex-end;
+}
+
+.item-doze {
+    flex: 1;
+    margin: 5px;
+    padding: 0 5px;
+    background-color: rgb(211, 184, 165);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.item-doze:first-child {
+    padding-top: 20px;
+}
+
+/* Flex Container-doze */
+.container-doze {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    border: 3px solid #ccc;
+}
+
+.column-terceiro {
+    flex-direction: column;
+}
+
+/* Fim do Align-self */
+
+/* Para comparações vide https://origamid.com/projetos/flexbox-guia-completo */
